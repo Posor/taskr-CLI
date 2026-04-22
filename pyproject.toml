@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'taskr'
+version = '0.1.0'
+description = 'A CLI task manager'
+requires-python = '>=3.10'
+dependencies = [
+    'typer[all]>=0.9',
+    'rich>=13',
+]
+
+[project.scripts]
+taskr = 'taskr.main:app'
+
+[tool.setuptools.packages.find]
+where = ["src"]

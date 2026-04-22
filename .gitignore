@@ -1,0 +1,5 @@
+.venv
+.pytest_cache/
+src/taskr/__pycache__/
+tests/__pycache__/
+*.egg-info/
